@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F465DFBA24DC47650030F7F2 /* HotDogOrNot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotDogOrNot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F465DFBA24DC47650030F7F2 /* Hot Dog?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hot Dog?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F465DFBD24DC47650030F7F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F465DFBF24DC47650030F7F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F465DFC124DC47650030F7F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		F465DFBB24DC47650030F7F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F465DFBA24DC47650030F7F2 /* HotDogOrNot.app */,
+				F465DFBA24DC47650030F7F2 /* Hot Dog?.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 			);
 			name = HotDogOrNot;
 			productName = HotDogOrNot;
-			productReference = F465DFBA24DC47650030F7F2 /* HotDogOrNot.app */;
+			productReference = F465DFBA24DC47650030F7F2 /* Hot Dog?.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PeggyWollenhaupt.HotDogOrNot;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hot Dog?";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PeggyWollenhaupt.HotDogOrNot;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hot Dog?";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
