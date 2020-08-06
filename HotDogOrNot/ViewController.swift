@@ -31,11 +31,46 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
             imageView.image = selectedImage
             
+            guard let ciImage = CIImage(image: selectedImage) else { fatalError("could not convert image") }
+            
+            detect(image: ciImage)
+            
         }
         
         imagePicker.dismiss(animated: true, completion: nil)
         
 
+        
+    }
+    
+    func detect(image: CIImage) {
+        
+        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {
+            fatalError("Loading CoreML Model Failed")
+        }
+        
+        let request = VNCoreMLRequest(model: model) { (request, error) in
+            guard let results = request.results as? [VNClassificationObservation] else {
+                fatalError("Model failed to process image")
+            }
+            
+            if let firstResult = results.first {
+                if firstResult.identifier.contains("hotdog") {
+                    self.navigationItem.title = "Hot dog!"
+                } else {
+                    self.navigationItem.title = "Not hot dog!"
+                }
+            }
+
+        }
+        
+        let handler = VNImageRequestHandler(ciImage: image)
+        
+        do {
+            try handler.perform([request])
+        } catch {
+            print(error)
+        }
         
     }
 
